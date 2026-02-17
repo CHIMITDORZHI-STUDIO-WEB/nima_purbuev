@@ -1,37 +1,45 @@
+import { useLanguage } from '../../contexts/LanguageContext'
+
 function Footer() {
+  const { t, lang } = useLanguage()
+
+  const navLinks = [
+    { label: t('nav.home'), href: '#hero' },
+    { label: t('nav.biography'), href: '#biography' },
+    { label: t('nav.gallery'), href: '#gallery' },
+    { label: t('nav.timeline'), href: '#timeline' },
+    { label: t('nav.sources'), href: '#sources' },
+  ]
+
   return (
-    <footer className="bg-tengri-blue text-sagaalgan-white py-12">
+    <footer className="bg-tengri-blue dark:bg-[#060f1c] text-sagaalgan-white py-12 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <h3 className="font-serif text-xl font-bold mb-4">Нима Пурбуев (1959–2016)</h3>
+            <h3 className="font-serif text-xl font-bold mb-4">
+              {lang === 'ru' ? 'Нима Пурбуев (1959–2016)' : 'Nima Purbuev (1959–2016)'}
+            </h3>
             <p className="text-sagaalgan-white/70 text-sm leading-relaxed">
-              Забайкальский живописец, график и монументалист. Член Союза художников России.
-              Работы хранятся в музеях Читы и Улан-Удэ, в частных коллекциях России,
-              Италии, Франции, Австрии, Бразилии и Китая.
+              {t('footer.about')}
             </p>
           </div>
 
           <div>
-            <h4 className="font-semibold mb-4">Навигация</h4>
+            <h4 className="font-semibold mb-4">{t('footer.navigation')}</h4>
             <ul className="space-y-2 text-sm text-sagaalgan-white/70">
-              <li><a href="#hero" className="hover:text-sagaalgan-white transition-colors">Главная</a></li>
-              <li><a href="#biography" className="hover:text-sagaalgan-white transition-colors">Биография</a></li>
-              <li><a href="#gallery" className="hover:text-sagaalgan-white transition-colors">Галерея</a></li>
-              <li><a href="#timeline" className="hover:text-sagaalgan-white transition-colors">Хронология</a></li>
+              {navLinks.map((link) => (
+                <li key={link.href}>
+                  <a href={link.href} className="hover:text-sagaalgan-white transition-colors">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
-          </div>
-
-          <div>
-            <h4 className="font-semibold mb-4">Контакты</h4>
-            <p className="text-sagaalgan-white/70 text-sm">
-              По вопросам сотрудничества и использования материалов обращайтесь по электронной почте.
-            </p>
           </div>
         </div>
 
         <div className="border-t border-sagaalgan-white/10 mt-8 pt-8 text-center text-sm text-sagaalgan-white/50">
-          &copy; {new Date().getFullYear()} Наследие Нимы Пурбуева. Все права защищены.
+          &copy; {new Date().getFullYear()} {t('footer.copyright')}
         </div>
       </div>
     </footer>
