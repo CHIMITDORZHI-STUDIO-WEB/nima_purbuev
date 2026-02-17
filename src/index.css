@@ -16,6 +16,12 @@ body {
   font-family: 'Inter', sans-serif;
   color: #1a1a1a;
   background-color: #F5F5F5;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark body {
+  color: #e0e0e0;
+  background-color: #0a1628;
 }
 
 h1, h2, h3, h4, h5, h6 {

@@ -1,7 +1,10 @@
 import { motion } from 'framer-motion'
 import artistPhoto from '../../assets/artist-photo.jpg'
+import { useLanguage } from '../../contexts/LanguageContext'
 
 function Hero() {
+  const { t } = useLanguage()
+
   return (
     <section
       id="hero"
@@ -25,7 +28,7 @@ function Hero() {
           className="mb-4"
         >
           <span className="inline-block text-steppe-sand font-serif text-lg sm:text-xl tracking-widest uppercase">
-            Забайкальский художник · 1959–2016
+            {t('hero.subtitle')}
           </span>
         </motion.div>
 
@@ -35,7 +38,7 @@ function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="font-serif text-5xl sm:text-6xl md:text-8xl text-sagaalgan-white font-bold leading-tight"
         >
-          Нима Пурбуев
+          {t('hero.title')}
         </motion.h1>
 
         <motion.div
@@ -51,8 +54,7 @@ function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mt-6 text-lg sm:text-xl text-sagaalgan-white/90 max-w-2xl mx-auto leading-relaxed"
         >
-          Живописец, график, монументалист и педагог, воспевающий красоту
-          родного края через призму этнического романтизма
+          {t('hero.description')}
         </motion.p>
 
         <motion.a
@@ -62,7 +64,7 @@ function Hero() {
           transition={{ duration: 0.8, delay: 0.9 }}
           className="inline-block mt-10 px-8 py-3 border-2 border-sagaalgan-white text-sagaalgan-white font-semibold rounded-lg hover:bg-sagaalgan-white hover:text-tengri-blue transition-colors duration-300"
         >
-          Узнать больше
+          {t('hero.cta')}
         </motion.a>
       </div>
     </section>
