@@ -4,9 +4,11 @@ function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-serif text-xl font-bold mb-4">Нима Пурбуев</h3>
+            <h3 className="font-serif text-xl font-bold mb-4">Нима Пурбуев (1959–2016)</h3>
             <p className="text-sagaalgan-white/70 text-sm leading-relaxed">
-              Забайкальский художник, чьё творчество отражает красоту и дух бурятской земли.
+              Забайкальский живописец, график и монументалист. Член Союза художников России.
+              Работы хранятся в музеях Читы и Улан-Удэ, в частных коллекциях России,
+              Италии, Франции, Австрии, Бразилии и Китая.
             </p>
           </div>
 

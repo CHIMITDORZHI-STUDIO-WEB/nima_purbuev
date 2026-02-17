@@ -25,7 +25,7 @@ function Hero() {
           className="mb-4"
         >
           <span className="inline-block text-steppe-sand font-serif text-lg sm:text-xl tracking-widest uppercase">
-            Забайкальский художник
+            Забайкальский художник · 1959–2016
           </span>
         </motion.div>
 
@@ -51,8 +51,8 @@ function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mt-6 text-lg sm:text-xl text-sagaalgan-white/90 max-w-2xl mx-auto leading-relaxed"
         >
-          Воспевающий красоту родного края
-          через призму этнического романтизма
+          Живописец, график, монументалист и педагог, воспевающий красоту
+          родного края через призму этнического романтизма
         </motion.p>
 
         <motion.a
