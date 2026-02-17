@@ -133,7 +133,7 @@ export const translations = {
           year: '2016',
           title: 'Память',
           description:
-            '13 января — ушёл из жизни в родном селе Кулусутай. Работы хранятся в музеях Читы и Улан-Удэ, в частных коллекциях России, Европы, Бразилии и Китая.',
+            '13 января — тихо ушёл из жизни дома в Чите, в кругу родных и близких. Несмотря на болезнь, до последних дней сохранял ясность духа и любовь к искусству. Его наследие — десятки полотен в музеях Читы и Улан-Удэ, в частных коллекциях России, Италии, Франции, Австрии, Бразилии и Китая — продолжает жить и вдохновлять.',
         },
       ],
     },
@@ -325,7 +325,7 @@ export const translations = {
           year: '2016',
           title: 'Legacy',
           description:
-            'January 13 — passed away in his native village of Kulusutai. Works are held in museums of Chita and Ulan-Ude, in private collections in Russia, Europe, Brazil and China.',
+            'January 13 — passed away peacefully at home in Chita, surrounded by his loving family. Despite his illness, he preserved clarity of spirit and love for art until his final days. His legacy — dozens of canvases in museums of Chita and Ulan-Ude, in private collections across Russia, Italy, France, Austria, Brazil and China — lives on and continues to inspire.',
         },
       ],
     },
