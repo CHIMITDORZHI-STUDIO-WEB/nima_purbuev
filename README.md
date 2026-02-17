@@ -4,7 +4,7 @@
 
 ## Технологический стек
 
-- **Framework**: React 18 + Vite
+- **Framework**: React 19 + Vite
 - **Styling**: Tailwind CSS (v3)
 - **Animation**: Framer Motion
 - **Icons**: Lucide React
