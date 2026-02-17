@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import artistPhoto from '../../assets/artist-photo.jpg'
 
 function Biography() {
   return (
@@ -15,15 +16,23 @@ function Biography() {
         </motion.h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Portrait placeholder */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="aspect-[3/4] rounded-2xl bg-gradient-to-br from-steppe-sand to-sky-blue/30 flex items-center justify-center"
+            className="relative rounded-2xl overflow-hidden shadow-xl"
           >
-            <span className="text-tengri-blue/40 font-serif text-xl">Фото художника</span>
+            <img
+              src={artistPhoto}
+              alt="Нима Пурбуевич Пурбуев — забайкальский художник"
+              className="w-full h-auto object-cover"
+            />
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-tengri-blue/70 to-transparent p-6">
+              <p className="text-sagaalgan-white font-serif text-lg">
+                Нима Пурбуевич Пурбуев
+              </p>
+            </div>
           </motion.div>
 
           <motion.div
@@ -33,18 +42,18 @@ function Biography() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="space-y-6"
           >
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed text-lg">
               Нима Пурбуевич Пурбуев — забайкальский художник, чьё творчество неразрывно
               связано с культурой и природой Бурятии. Его картины отражают глубокую связь
               с родной землёй, передавая дух степных просторов, величие гор и тепло
               человеческих отношений.
             </p>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed text-lg">
               В своих работах художник сочетает традиционные мотивы бурятской культуры
               с современными художественными приёмами, создавая уникальный стиль,
               который можно назвать «этническим романтизмом».
             </p>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed text-lg">
               Творчество Нимы Пурбуева — это мост между прошлым и настоящим,
               между традицией и современностью, между человеком и природой.
             </p>
